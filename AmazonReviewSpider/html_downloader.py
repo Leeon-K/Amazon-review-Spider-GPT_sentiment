@@ -30,7 +30,7 @@ class Downloader(object):
         if headers:
             self.request_session.headers.update(headers)
         try:
-            #print("Downloader downloading the page...")
+            print("Downloader downloading the page...")
             if data:
                 content = self.request_session.post(url, data, proxies=proxies).content
             else:
@@ -45,7 +45,7 @@ class Downloader(object):
             if retry_count > 0:
                 self.download(url, retry_count - 1, headers, proxies, data)
         except Exception as e:
-            print('Downloader download Exception:' + e)
+            print('Downloader download Exception:' + str(e))
             content = None
         return content
 

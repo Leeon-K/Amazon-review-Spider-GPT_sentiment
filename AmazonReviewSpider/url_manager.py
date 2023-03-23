@@ -6,7 +6,7 @@ class UrlManager(object):
         pass
 
     def get_all_main_url_from_file(self):
-        input_dir = "输入信息" + os.path.sep + "商品地址文件.txt"
+        input_dir = "D:\project_python\\nlp_bookreview\\amazon-review-spider\AmazonReviewSpider\输入信息" + os.path.sep + "商品地址文件.txt"
 
 
         try:
