@@ -6,7 +6,7 @@ class UrlManager(object):
         pass
 
     def get_all_main_url_from_file(self):
-        input_dir = "D:\project_python\\nlp_bookreview\\amazon-review-spider\AmazonReviewSpider\输入信息" + os.path.sep + "商品地址文件.txt"
+        input_dir = "输入信息" + os.path.sep + "商品地址文件.txt"
 
 
         try:
@@ -32,6 +32,8 @@ class UrlManager(object):
             return "https://www.amazon.ca"
         if "https://www.amazon.co.uk" in one_url:
             return "https://www.amazon.co.uk"
+        if "https://www.amazon.com" in one_url:
+            return "https://www.amazon.com"
         raise Exception("获取亚马逊地址失败")
 
 

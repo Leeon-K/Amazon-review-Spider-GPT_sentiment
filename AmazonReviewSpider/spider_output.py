@@ -29,9 +29,11 @@ class OutPutUse(object):
             # sh.write(index + 2, 3, all_review_info[index].get("profile_name"))
 
     def save_review_info(self):
-        file_name = "评论数据" + time.strftime('%Y-%m-%d %H-%M-%S', time.localtime(time.time())) + "总尝试"
-        save_dir = "D:\project_python\\nlp_bookreview\\amazon-review-spider\AmazonReviewSpider\评论数据" + os.path.sep + file_name + ".xls"
+        file_name = "评论数据" + time.strftime('%Y-%m-%d %H-%M-%S', time.localtime(time.time())) + "total"
+        save_dir = "/home/changkang.li/papers/Amazon-review-crawler/AmazonReviewSpider/评论数据/" + file_name + ".xls"
+        print("saved in"+save_dir)
         self.wb.save(save_dir)
+
 
 
 if __name__ == '__main__':

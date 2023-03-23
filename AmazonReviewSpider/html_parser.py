@@ -68,7 +68,11 @@ class HtmlParser(object):
                         #  "profile_name":profile_name_list[index]
                         })
                 else:
-                    print("debug")
+                    if index >= len(title_list):
+                        print("title_list debug")
+                    elif index >= len(review_body_list):
+                        print("review_body_list debug")
+                    print("all_review_list debug, skip this page")
             except BaseException as e:
                 print("问题在这")
 

@@ -52,7 +52,7 @@ class Scheduler(object):
                 self.run_a_main_url(index, main_url)
             except BaseException as e:
                 print("商品抓取评论失败，地址:" + main_url + str(e))
-            self.output.save_review_info()
+            # self.output.save_review_info() # 不需要多余的保存
         self.output.save_review_info()
 
     def run_a_main_url(self, index, main_url):
