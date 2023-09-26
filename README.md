@@ -6,5 +6,5 @@
 在输入信息/商品地址文件.txt 输入要爬取的亚马逊网站的地址，每行一个地址
 
 ## 更新说明
-1.修复了由于网页源码版本更迭导致的部分bug，修正爬取规则。
-2.整理好文本数据excel后，填入自己的OPENAI key，运行chatreview_sentiment.py即可得到ChatGPT（基于GPT3）对Review的情感色彩得分。
+- 修复了由于网页源码版本更迭导致的部分bug，修正爬取规则。
+- 整理好文本数据excel后，填入自己的OPENAI key，运行chatreview_sentiment.py即可得到ChatGPT（基于GPT3）对Review的情感色彩得分。
